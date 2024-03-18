@@ -75,3 +75,6 @@ chmod +x queries.sh
 ./insert_data.sh
 psql --username=freecodecamp --dbname=postgres
 ./queries.sh
+pg_dump --usernAME=freecodecamp --dbname=worldcup > worldcup.sql
+rm worldcup.sql
+pg_dump --username=freecodecamp --dbname=worldcup > worldcup.sql
